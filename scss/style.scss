@@ -1,0 +1,106 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "reset";
+@import "global";
+
+.random {
+    padding: 0 30px;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 100px;
+    &__title {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    &__inner {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 32px;
+        line-height: 50px;
+    }
+    &__input {
+        width: 80px;
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 32px;
+        padding: 15px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+    &__total {
+        display: block;
+        text-align: center;
+        font-size: 100px;
+        line-height: 120px;
+        font-weight: 800;
+        background: center url('../images/rundom.gif');
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.counter {
+    &__box {
+        display: flex;
+        justify-content: center;
+    }
+    &__top {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: -15px;
+    }
+    &__btn {
+        max-width: 50px;
+    }
+    &__text {
+        margin-bottom: 15px;
+    }
+    &__btn-reset {
+        max-width: 50px;
+        position: relative;        
+        transition: all .5s;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 40px;
+            height: 40px;
+            background: no-repeat 100% / 100% url('../images/reset.png');
+        }
+        &:hover::after {
+            background: no-repeat 100% / 100% url('../images/reset-hover.png');
+        }
+    }
+}
+
+
+.btn-span {
+    min-width: 50px;
+    max-width: 70px;
+    height: 50px;
+    display: inline-block;
+    padding: 15px 5px;
+    border: 1px solid $text;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+@import "media";
