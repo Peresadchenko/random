@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>random</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="random">
+    <p class="random__title">Случайное число</p>
+    <div class="random__inner">
+
+      <div class="counter__box">       
+
+        <div class="counter counter-to">
+          <div class="counter__top">
+            <button class="counter__btn btn" id="btnCounterFromNamMinus"> -
+            </button>
+            <p class="counter__text">от</p>
+            <span class="btn-span" id="fromNam">0</span>
+            <button class="counter__btn btn" id="btnCounterFromNamPlus"> +
+            </button>
+          </div>
+          <div class="counter__box">
+            <button class="counter__btn-reset btn" id="resetFromNam"></button>
+          </div>
+        </div>
+
+        <div class="counter counter-from">
+          <div class="counter__top">
+            <button class="counter__btn btn" id="btnCounterToNamMinus"> -
+            </button>
+            <p class="counter__text">до</p>
+            <span class="btn-span" id="toNam">0</span>
+            <button class="counter__btn btn" id="btnCounterToNamPlus"> +
+            </button>
+          </div>
+          <div class="counter__box">
+            <button class="counter__btn-reset btn" id="resetToNam"></button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <button class="random__btn btn" id="randomBtn">Жми!</button>
+    </div>
+    <span class="random__total" id="randomTotal">0</span>
+  </section>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

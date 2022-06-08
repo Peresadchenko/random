@@ -1,0 +1,33 @@
+body {
+    @extend %Roboto-700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $text;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    max-width: 180px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        border: solid 1px #000;
+    }
+}
