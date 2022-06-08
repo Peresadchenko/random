@@ -1,5 +1,6 @@
-let counterToNam = 0
-let counterFromNam = 0
+// "use strict"
+
+
 
 let btnCounterToNamMinus = document.getElementById('btnCounterToNamMinus')
 let btnCounterToNamPlus = document.getElementById('btnCounterToNamPlus')
@@ -32,8 +33,8 @@ function onClickCounterToNamMinus() {
     counterToNam--
     document.getElementById('toNam').innerHTML = counterToNam
     setItemToNam()
-    if (counterToNam < 1) {
-        counterToNam = 1
+    if (counterToNam < 0) {
+        onClickCounterToNamPlus()
     }
 }
 
@@ -42,8 +43,8 @@ function onClickCounterFromNamMinus() {
     counterFromNam--
     document.getElementById('fromNam').innerHTML = counterFromNam
     setItemFromNam()
-    if (counterFromNam < 1) {
-        counterFromNam = 1
+    if (counterFromNam < 0) {
+        onClickCounterFromNamPlus()
     }
 }
 
@@ -89,7 +90,6 @@ function onClickRandomBtn() {
     }
     randomTotal.innerHTML = getRandomNam(counterFromNam, counterToNam)
 }
-
 
 
 
