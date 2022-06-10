@@ -2,22 +2,17 @@
 
 // ______________________________________счётчик__________________________________________________
 
-// ______________переменные по id для "ОТ"______________
+// ______________переменная по id для "ОТ"______________
 let fromNam = document.getElementById('fromNam')
-let btnCounterFromNamMinus = document.getElementById('btnCounterFromNamMinus')
-let btnCounterFromNamPlus = document.getElementById('btnCounterFromNamPlus')
-let resetFromNam = document.getElementById('resetFromNam')
 
 
-// ______________переменные по id для "ДО"______________
+// ______________переменная по id для "ДО"______________
 let toNam = document.getElementById('toNam')
-let btnCounterToNamMinus = document.getElementById('btnCounterToNamMinus')
-let btnCounterToNamPlus = document.getElementById('btnCounterToNamPlus')
-let resetToNam = document.getElementById('resetToNam')
 
 
 
 // ______________функция для кнопки (+) для "ДО"______________
+let btnCounterToNamPlus = document.getElementById('btnCounterToNamPlus')
 btnCounterToNamPlus.addEventListener('click', onClickCounterToNamPlus)
 function onClickCounterToNamPlus() {
     counterToNam++
@@ -26,6 +21,7 @@ function onClickCounterToNamPlus() {
 }
 
 // ______________функция для кнопки (-) для "ДО"______________
+let btnCounterToNamMinus = document.getElementById('btnCounterToNamMinus')
 btnCounterToNamMinus.addEventListener('click', onClickCounterToNamMinus)
 function onClickCounterToNamMinus() {
     counterToNam--
@@ -37,6 +33,7 @@ function onClickCounterToNamMinus() {
 }
 
 // ______________функция для кнопки (сброс) для "ДО"______________
+let resetToNam = document.getElementById('resetToNam')
 resetToNam.addEventListener('click', onClickToNamReset)
 function onClickToNamReset() {
     counterToNam = 0
@@ -45,6 +42,7 @@ function onClickToNamReset() {
 
 
 // ______________функция для кнопки (+) для "ОТ"______________
+let btnCounterFromNamPlus = document.getElementById('btnCounterFromNamPlus')
 btnCounterFromNamPlus.addEventListener('click', onClickCounterFromNamPlus)
 function onClickCounterFromNamPlus() {
     counterFromNam++
@@ -53,6 +51,7 @@ function onClickCounterFromNamPlus() {
 }
 
 // ______________функция для кнопки (-) для "ОТ"______________
+let btnCounterFromNamMinus = document.getElementById('btnCounterFromNamMinus')
 btnCounterFromNamMinus.addEventListener('click', onClickCounterFromNamMinus)
 function onClickCounterFromNamMinus() {
     counterFromNam--
@@ -64,6 +63,7 @@ function onClickCounterFromNamMinus() {
 }
 
 // ______________функция для кнопки (сброс) для "ОТ"______________
+let resetFromNam = document.getElementById('resetFromNam')
 resetFromNam.addEventListener('click', onClickFromNamReset)
 function onClickFromNamReset() {
     counterFromNam = 0
