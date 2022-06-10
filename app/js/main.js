@@ -2,17 +2,16 @@
 
 // ______________________________________счётчик__________________________________________________
 
-// ______________переменная по id для "ОТ"______________
-let fromNam = document.getElementById('fromNam')
+// ______________константа по id для "ОТ"______________
+const fromNam = document.getElementById('fromNam')
 
 
-// ______________переменная по id для "ДО"______________
-let toNam = document.getElementById('toNam')
-
+// ______________константа по id для "ДО"______________
+const toNam = document.getElementById('toNam')
 
 
 // ______________функция для кнопки (+) для "ДО"______________
-let btnCounterToNamPlus = document.getElementById('btnCounterToNamPlus')
+const btnCounterToNamPlus = document.getElementById('btnCounterToNamPlus')
 btnCounterToNamPlus.addEventListener('click', onClickCounterToNamPlus)
 function onClickCounterToNamPlus() {
     counterToNam++
@@ -21,7 +20,7 @@ function onClickCounterToNamPlus() {
 }
 
 // ______________функция для кнопки (-) для "ДО"______________
-let btnCounterToNamMinus = document.getElementById('btnCounterToNamMinus')
+const btnCounterToNamMinus = document.getElementById('btnCounterToNamMinus')
 btnCounterToNamMinus.addEventListener('click', onClickCounterToNamMinus)
 function onClickCounterToNamMinus() {
     counterToNam--
@@ -33,7 +32,7 @@ function onClickCounterToNamMinus() {
 }
 
 // ______________функция для кнопки (сброс) для "ДО"______________
-let resetToNam = document.getElementById('resetToNam')
+const resetToNam = document.getElementById('resetToNam')
 resetToNam.addEventListener('click', onClickToNamReset)
 function onClickToNamReset() {
     counterToNam = 0
@@ -42,7 +41,7 @@ function onClickToNamReset() {
 
 
 // ______________функция для кнопки (+) для "ОТ"______________
-let btnCounterFromNamPlus = document.getElementById('btnCounterFromNamPlus')
+const btnCounterFromNamPlus = document.getElementById('btnCounterFromNamPlus')
 btnCounterFromNamPlus.addEventListener('click', onClickCounterFromNamPlus)
 function onClickCounterFromNamPlus() {
     counterFromNam++
@@ -51,7 +50,7 @@ function onClickCounterFromNamPlus() {
 }
 
 // ______________функция для кнопки (-) для "ОТ"______________
-let btnCounterFromNamMinus = document.getElementById('btnCounterFromNamMinus')
+const btnCounterFromNamMinus = document.getElementById('btnCounterFromNamMinus')
 btnCounterFromNamMinus.addEventListener('click', onClickCounterFromNamMinus)
 function onClickCounterFromNamMinus() {
     counterFromNam--
@@ -63,7 +62,7 @@ function onClickCounterFromNamMinus() {
 }
 
 // ______________функция для кнопки (сброс) для "ОТ"______________
-let resetFromNam = document.getElementById('resetFromNam')
+const resetFromNam = document.getElementById('resetFromNam')
 resetFromNam.addEventListener('click', onClickFromNamReset)
 function onClickFromNamReset() {
     counterFromNam = 0
@@ -94,17 +93,16 @@ document.getElementById('fromNam').innerHTML = counterFromNam
 
 // ______________________________________random__________________________________________________
 
-// ______________переменные по id для кнопки и итога______________
-let randomBtn = document.getElementById('randomBtn')
-let randomTotal = document.getElementById('randomTotal')
+// ______________константа по id для кнопки и итога______________
+const randomBtn = document.getElementById('randomBtn')
+const randomTotal = document.getElementById('randomTotal')
 
 
 // ______________функция для кнопки (ЖМИ) и вывод результата______________
 randomBtn.addEventListener('click', onClickRandomBtn)
 function onClickRandomBtn() {
     function getRandomNam(min, max) {
-        let totalNam = Math.random() * (max - min + 1) + min
-        return Math.floor(totalNam)
+        return Math.round(Math.random() * (max - min + 1) + min)
 
     }
     randomTotal.innerHTML = getRandomNam(counterFromNam, counterToNam)
