@@ -37,6 +37,7 @@ resetToNam.addEventListener('click', onClickToNamReset)
 function onClickToNamReset() {
     counterToNam = 0
     document.getElementById('toNam').innerHTML = counterToNam
+    setItemToNam()
 }
 
 
@@ -67,6 +68,7 @@ resetFromNam.addEventListener('click', onClickFromNamReset)
 function onClickFromNamReset() {
     counterFromNam = 0
     document.getElementById('fromNam').innerHTML = counterFromNam
+    setItemFromNam()
 }
 
 
