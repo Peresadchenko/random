@@ -102,7 +102,7 @@ const randomTotal = document.getElementById('randomTotal')
 randomBtn.addEventListener('click', onClickRandomBtn)
 function onClickRandomBtn() {
     function getRandomNam(min, max) {
-        return Math.round(Math.random() * (max - min + 1) + min)
+        return Math.floor(Math.random() * (max - min + 1) + min)
 
     }
     randomTotal.innerHTML = getRandomNam(counterFromNam, counterToNam)
